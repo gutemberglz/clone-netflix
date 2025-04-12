@@ -60,6 +60,7 @@ header {
 }
 
 strong.bg {
+  display      : block;
   padding      : 2px 5px;
   border-radius: 3px;
   color        : var(--primary);
@@ -129,19 +130,19 @@ form {
 header>h2 {
   margin-top: 20px;
   width     : 100%;
-  font-size : 30px;
-  padding   : 20px;
+  font-size : 20px;
+  padding   : 10px 20px;
+}
+
+article p {
+
+  color: #555;
 }
 
 .section-on-the-rise-overflow {
   width     : 100%;
   overflow-x: scroll;
 }
-
-
-
-
-
 
 .on-the-rise {
   padding         : 5px;
@@ -183,18 +184,56 @@ header>h2 {
 }
 
 .section-reasons .reasons-item {
-  padding      : 10px;
+  padding      : 5px 20px;
   border-radius: 10px;
   border       : 1px solid #00000033;
 }
 
 .section-reasons .reasons-item h3 {
+  margin-top   : 10px;
   color        : var(--primary);
   margin-bottom: 5px;
-  text-shadow  : 1px 1px #0000004b;
+  text-shadow  : 1px 1px #00000048;
 }
 
 .section-reasons .reasons-item p {
   -webkit-hyphens: auto;
   hyphens        : auto;
+}
+
+.reasons-item-svg {
+  margin-top     : 10px;
+  display        : flex;
+  justify-content: end;
+}
+
+.reasons-item-svg svg {
+  width: 60px;
+}
+
+#frequently-asked-questions {}
+
+#frequently-asked-questions dl {
+  padding       : 20px;
+  display       : flex;
+  flex-direction: column;
+  gap           : 10px;
+}
+
+.frequently-asked-questions-item {
+  height          : 40px;
+  overflow        : hidden;
+  background-color: #8080801a;
+  border-radius   : 5px;
+
+}
+
+.frequently-asked-questions-item dt {
+  height       : 40px;
+  padding      : 10px;
+  font-size    : 18px;
+  display      : flex;
+  align-items  : center;
+  text-wrap    : nowrap;
+  text-overflow: ellipsis;
 }
