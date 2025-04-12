@@ -222,19 +222,28 @@ article p {
 }
 
 .frequently-asked-questions-item {
-  height          : 40px;
-  overflow        : hidden;
+  height       : 40px;
+  overflow     : hidden;
+  border-radius: 5px;
+
   background-color: #8080801a;
-  border-radius   : 5px;
+
+}
+
+.frequently-asked-questions-item .more svg {
+  width: 28px;
 
 }
 
 .frequently-asked-questions-item dt {
-  height       : 40px;
-  padding      : 10px;
-  font-size    : 18px;
-  display      : flex;
-  align-items  : center;
-  text-wrap    : nowrap;
-  text-overflow: ellipsis;
+  height         : 40px;
+  padding        : 10px;
+  font-size      : 18px;
+  display        : flex;
+  align-items    : center;
+  text-wrap      : nowrap;
+  text-overflow  : ellipsis;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
 }
