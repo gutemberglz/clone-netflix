@@ -1,0 +1,11 @@
+#background-layout {
+  height         : 100vh;
+  background     : url("../imgs/bg-small.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.bg-black-opacity {
+  width           : 100%;
+  height          : 100%;
+  background-color: #00000088;
+}
