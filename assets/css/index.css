@@ -125,3 +125,76 @@ form {
   display        : flex;
   justify-content: flex-end;
 }
+
+header>h2 {
+  margin-top: 20px;
+  width     : 100%;
+  font-size : 30px;
+  padding   : 20px;
+}
+
+.section-on-the-rise-overflow {
+  width     : 100%;
+  overflow-x: scroll;
+}
+
+
+
+
+
+
+.on-the-rise {
+  padding         : 5px;
+  gap             : 15px;
+  display         : flex;
+  overflow-x      : scroll;
+  background-color: #000;
+}
+
+.on-the-rise .img-item {
+  width   : fit-content;
+  position: relative;
+}
+
+.on-the-rise .img-item img {
+  width: 120px;
+
+}
+
+.number-sup {
+  position                  : absolute;
+  left                      : 0px;
+  bottom                    : 0px;
+  transform                 : translate(-30%, 10%);
+  font-size                 : 60px;
+  font-weight               : bolder;
+  color                     : var(--primary);
+  font-family               : Arial, Helvetica, sans-serif;
+  /* text-shadow            : 2px 2px #fff; */
+  -webkit-text-stroke       : 1px #fff;
+  /* -webkit-text-fill-color: aqua; */
+}
+
+.section-reasons {
+  padding              : 10px;
+  display              : grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap                  : 10px;
+}
+
+.section-reasons .reasons-item {
+  padding      : 10px;
+  border-radius: 10px;
+  border       : 1px solid #00000033;
+}
+
+.section-reasons .reasons-item h3 {
+  color        : var(--primary);
+  margin-bottom: 5px;
+  text-shadow  : 1px 1px #0000004b;
+}
+
+.section-reasons .reasons-item p {
+  -webkit-hyphens: auto;
+  hyphens        : auto;
+}
