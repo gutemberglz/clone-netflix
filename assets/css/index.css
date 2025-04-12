@@ -1,6 +1,6 @@
 #background-layout {
   height         : 100vh;
-  background     : url("../imgs/bg-small.jpg") top center no-repeat fixed;
+  background     : url("../imgs/bg-small.jpg") center center no-repeat;
   background-size: cover;
 }
 
