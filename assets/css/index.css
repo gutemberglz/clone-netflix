@@ -1,3 +1,18 @@
+strong.main {
+  color: var(--primary);
+}
+
+mark.main {
+  padding         : 0px 5px;
+  color           : #fff;
+  background-color: var(--primary);
+}
+
+
+
+
+
+
 #background-layout {
   height         : 100vh;
   background     : url("../imgs/bg-small.jpg") center center no-repeat;
@@ -222,16 +237,17 @@ article p {
 }
 
 .frequently-asked-questions-item {
-  height       : 40px;
-  overflow     : hidden;
-  border-radius: 5px;
-
+  height          : 40px;
+  border-radius   : 5px;
+  transition      : height ease-in-out .3s;
+  overflow        : hidden;
   background-color: #8080801a;
 
 }
 
 .frequently-asked-questions-item .more svg {
-  width: 28px;
+  width     : 28px;
+  transition: all ease-in-out .2s;
 
 }
 
@@ -246,4 +262,18 @@ article p {
   display        : flex;
   justify-content: space-between;
   align-items    : center;
+
+}
+
+.frequently-asked-questions-item dd {
+  padding        : 0px 10px;
+  font-size      : 18px;
+  -moz-hyphens   : auto;
+  -webkit-hyphens: auto;
+  hyphens        : auto;
+
+}
+
+.frequently-asked-questions-item dd p {
+  text-indent: 20px;
 }
