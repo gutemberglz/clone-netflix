@@ -1,7 +1,7 @@
 #background-layout {
-  height    : 100vh;
-  background: url("../imgs/bg-small.jpg") center center no-repeat fixed;
-
+  height         : 100vh;
+  background     : url("../imgs/bg-small.jpg") top center no-repeat fixed;
+  background-size: cover;
 }
 
 .bg-black-opacity {
