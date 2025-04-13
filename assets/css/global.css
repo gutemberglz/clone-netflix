@@ -23,3 +23,8 @@ button {
   outline: none;
   border : none;
 }
+
+button,
+dt {
+  cursor: pointer;
+}

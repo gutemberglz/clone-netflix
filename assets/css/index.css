@@ -11,10 +11,13 @@ mark.main {
 
 
 
-
+.white {
+  color: #fff;
+}
 
 #background-layout {
   height         : 100vh;
+  max-height     : 1400px;
   background     : url("../imgs/bg-small.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -48,7 +51,7 @@ mark.main {
 }
 
 #mt-content {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .content {
@@ -109,7 +112,6 @@ strong.bg {
 }
 
 form {
-
   width         : 100%;
   display       : flex;
   flex-direction: column;
@@ -133,6 +135,7 @@ form {
   padding         : 0px 10px;
   font-size       : 18px;
   border-radius   : 5px;
+  cursor          : pointer;
   color           : #fff;
   background-color: var(--primary);
 
@@ -155,7 +158,6 @@ header>h2 {
 }
 
 article p {
-
   color: #555;
 }
 
@@ -306,4 +308,145 @@ article p {
   border-radius   : 5px;
   background-color: var(--primary);
   color           : #fff;
+}
+
+@media screen and (min-width: 398px) {
+  strong.bg {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    margin: auto;
+    width : 600px;
+  }
+
+  .content {
+    margin: auto;
+    width : 600px;
+  }
+
+
+
+
+  header>h2,
+  .section-on-the-rise-overflow,
+  .section-reasons,
+  #section-prices,
+  #frequently-asked-questions {
+    width    : 100%;
+    max-width: 700px;
+    margin   : auto;
+  }
+
+  #section-prices ul {
+    flex-direction: row;
+  }
+
+  #section-prices ul li {
+    flex: 1;
+  }
+
+  #section-prices>ul>li>div {
+    height        : 100%;
+    flex-direction: column;
+    align-items   : flex-start;
+    flex          : 1;
+  }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    margin: auto;
+    width : 900px;
+  }
+
+  .content {
+    margin: auto;
+    width : 900px;
+  }
+
+  header>h2,
+  .section-on-the-rise-overflow,
+  .section-reasons,
+  #section-prices,
+  #frequently-asked-questions {
+    width    : 100%;
+    max-width: 900px;
+    margin   : auto;
+  }
+
+  #section-prices ul {
+    flex-direction: row;
+  }
+
+  #section-prices ul li {
+    flex: 1;
+  }
+
+  #section-prices>ul>li>div {
+    height        : 100%;
+    flex-direction: column;
+    align-items   : flex-start;
+    flex          : 1;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 900px;
+  }
+
+
+  .content {
+    width: 900px;
+  }
+
+  .content h1 {
+    max-width: 800px;
+    font-size: 60px;
+  }
+
+  header>h2,
+  .section-on-the-rise-overflow,
+  .section-reasons,
+  #section-prices,
+  #frequently-asked-questions {
+    max-width: 1000px;
+  }
+
+  form {
+    width: 70%;
+
+    gap            : 30px;
+    justify-content: center;
+    flex-direction : row;
+    align-items    : center;
+  }
+
+  #content-form>h2 {
+    width: 70%;
+  }
+
+  #btn-main {
+    width: 200px;
+  }
+
+  #btn-main {
+    margin: 0;
+  }
+
+
+
 }
