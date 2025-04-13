@@ -254,12 +254,12 @@ article p {
 }
 
 .frequently-asked-questions-item dt {
-  height         : 40px;
-  padding        : 10px;
-  font-size      : 18px;
-  display        : flex;
-  align-items    : center;
-  text-wrap      : nowrap;
+  height     : 40px;
+  padding    : 10px;
+  font-size  : 18px;
+  display    : flex;
+  align-items: center;
+
   text-overflow  : ellipsis;
   display        : flex;
   justify-content: space-between;
@@ -310,6 +310,44 @@ article p {
   color           : #fff;
 }
 
+footer {
+  margin-top: 90px;
+  padding   : 30px;
+
+  color           : #fff;
+  background-color: #000;
+}
+
+.nav-footer ul {
+  display              : grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap              : 20px;
+}
+
+.nav-footer ul>li {
+  font-size: 18px;
+  color    : #ffffffb3;
+
+  a {
+    color: #ffffffb3;
+  }
+}
+
+.nav-tel {
+  grid-column: 1 / -1;
+  grid-row   : 1 / 5;
+
+}
+
+.footer-svg {
+  margin-top: 50px;
+}
+
+.footer-svg svg {
+  width: 100px;
+  fill : var(--primary);
+}
+
 @media screen and (min-width: 398px) {
   strong.bg {
     display: inline;
@@ -328,13 +366,14 @@ article p {
     width : 600px;
   }
 
+  .nav-footer ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .content {
     margin: auto;
     width : 600px;
   }
-
-
-
 
   header>h2,
   .section-on-the-rise-overflow,
@@ -360,6 +399,8 @@ article p {
     align-items   : flex-start;
     flex          : 1;
   }
+
+
 
 
 }
@@ -400,6 +441,18 @@ article p {
     flex          : 1;
   }
 
+  footer {
+    padding: 70px 90px;
+  }
+
+  .nav-footer ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav-footer ul>li {
+    font-size: 16px;
+  }
+
 
 }
 
@@ -418,6 +471,8 @@ article p {
     font-size: 60px;
   }
 
+
+
   header>h2,
   .section-on-the-rise-overflow,
   .section-reasons,
@@ -427,8 +482,7 @@ article p {
   }
 
   form {
-    width: 70%;
-
+    width          : 70%;
     gap            : 30px;
     justify-content: center;
     flex-direction : row;
@@ -447,6 +501,8 @@ article p {
     margin: 0;
   }
 
-
+  .nav-footer ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 }
