@@ -426,6 +426,10 @@ footer {
     margin   : auto;
   }
 
+  .section-reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #section-prices ul {
     flex-direction: row;
   }
@@ -480,6 +484,8 @@ footer {
   #frequently-asked-questions {
     max-width: 1000px;
   }
+
+
 
   form {
     width          : 70%;
